@@ -1,0 +1,111 @@
+Thu Jul 29 12:13:58 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.11 (be patient)...INFO: GET header == 
+---
+GET /function/image-classification-alexnet-cpu HTTP/1.0
+Host: 192.168.1.11:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:14:27 GMT
+X-Duration-Seconds: 23.302052
+
+Downloading: "https://github.com/pytorch/vision/archive/v0.6.0.zip" to /home/app/.cache/torch/hub/v0.6.0.zip
+Downloading: "https://download.pytorch.org/models/alexnet-owt-4df8aa71.pth" to /home/app/.cache/torch/hub/checkpoints/alexnet-owt-4df8aa71.pth
+0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 208
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:14:34 GMT
+X-Duration-Seconds: 6.647009
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+404: 'airliner', 94.14906311035156
+The function has executed successfully in 4.93 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 221
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:14:42 GMT
+X-Duration-Seconds: 7.631066
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+548: 'entertainment center', 38.886444091796875
+The function has executed successfully in 5.89 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 243
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:14:49 GMT
+X-Duration-Seconds: 7.328041
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+671: 'mountain bike, all-terrain bike, off-roader', 46.48640823364258
+The function has executed successfully in 5.61 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 246
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:14:56 GMT
+X-Duration-Seconds: 6.332950
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+829: 'streetcar, tram, tramcar, trolley, trolley car', 82.29742431640625
+The function has executed successfully in 4.60 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.11
+Server Port:            8080
+
+Document Path:          /function/image-classification-alexnet-cpu
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   58.237 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      178113 bytes
+HTML transferred:       177393 bytes
+Requests per second:    0.09 [#/sec] (mean)
+Time per request:       11647.392 [ms] (mean)
+Time per request:       11647.392 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.99 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1   16  13.7     23      32
+Processing:  6378 11631 10278.3   7530   29994
+Waiting:     6377 11619 10253.4   7529   29938
+Total:       6404 11647 10270.1   7555   29996
+
+Percentage of the requests served within a certain time (ms)
+  50%   7402
+  66%   7708
+  75%   7708
+  80%  29996
+  90%  29996
+  95%  29996
+  98%  29996
+  99%  29996
+ 100%  29996 (longest request)
+***********************

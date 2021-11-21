@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/floating-point-operation-sqrt
+Document Length:        Variable
+
+Concurrency Level:      12
+Time taken for tests:   52.240 seconds
+Complete requests:      20
+Failed requests:        0
+Total transferred:      3678 bytes
+HTML transferred:       719 bytes
+Requests per second:    0.38 [#/sec] (mean)
+Time per request:       31343.752 [ms] (mean)
+Time per request:       2611.979 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.07 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2  461 516.3     10    1036
+Processing:  8302 21207 5251.1  24226   27140
+Waiting:     8302 21207 5251.1  24226   27140
+Total:       8311 21667 5402.0  24232   28151
+
+Percentage of the requests served within a certain time (ms)
+  50%  24232
+  66%  25902
+  75%  26298
+  80%  26368
+  90%  26730
+  95%  28151
+  98%  28151
+  99%  28151
+ 100%  28151 (longest request)

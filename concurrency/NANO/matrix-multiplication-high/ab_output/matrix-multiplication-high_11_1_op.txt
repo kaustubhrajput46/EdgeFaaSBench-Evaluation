@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/matrix-multiplication-high
+Document Length:        Variable
+
+Concurrency Level:      11
+Time taken for tests:   219.660 seconds
+Complete requests:      20
+Failed requests:        0
+Total transferred:      5050 bytes
+HTML transferred:       2060 bytes
+Requests per second:    0.09 [#/sec] (mean)
+Time per request:       120812.751 [ms] (mean)
+Time per request:       10982.977 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    2   0.5      2       4
+Processing:  6673 103924 28769.4 123678  124283
+Waiting:     6673 103924 28769.4 123678  124283
+Total:       6677 103926 28769.3 123679  124285
+
+Percentage of the requests served within a certain time (ms)
+  50%  123679
+  66%  123846
+  75%  124005
+  80%  124028
+  90%  124050
+  95%  124285
+  98%  124285
+  99%  124285
+ 100%  124285 (longest request)

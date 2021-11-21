@@ -1,0 +1,114 @@
+Thu Jul 29 07:57:19 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.11 (be patient)...INFO: GET header == 
+---
+GET /function/sentiment-analysis HTTP/1.0
+Host: 192.168.1.11:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 258
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 11:57:34 GMT
+X-Duration-Seconds: 8.573688
+
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Unzipping tokenizers/punkt.zip.
+{"polarity": 0.023654765939669517, "subjectivity": 0.34460618027030226, "sentence_count": 4229}
+The function has executed successfully in 3.96 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 263
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 11:57:39 GMT
+X-Duration-Seconds: 5.457158
+
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+{"polarity": 0.023654765939669517, "subjectivity": 0.34460618027030226, "sentence_count": 4229}
+The function has executed successfully in 3.98 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 263
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 11:57:45 GMT
+X-Duration-Seconds: 5.465927
+
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+{"polarity": 0.023654765939669517, "subjectivity": 0.34460618027030226, "sentence_count": 4229}
+The function has executed successfully in 4.01 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 263
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 11:57:50 GMT
+X-Duration-Seconds: 5.377087
+
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+{"polarity": 0.023654765939669517, "subjectivity": 0.34460618027030226, "sentence_count": 4229}
+The function has executed successfully in 3.93 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 263
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 11:57:56 GMT
+X-Duration-Seconds: 5.450128
+
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+{"polarity": 0.023654765939669517, "subjectivity": 0.34460618027030226, "sentence_count": 4229}
+The function has executed successfully in 3.97 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.11
+Server Port:            8080
+
+Document Path:          /function/sentiment-analysis
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   36.815 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      2050 bytes
+HTML transferred:       1310 bytes
+Requests per second:    0.14 [#/sec] (mean)
+Time per request:       7362.998 [ms] (mean)
+Time per request:       7362.998 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.05 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    2   0.5      2       3
+Processing:  5406 7361 4233.8   5492   14934
+Waiting:     5406 7361 4233.9   5492   14934
+Total:       5408 7363 4234.1   5494   14937
+
+Percentage of the requests served within a certain time (ms)
+  50%   5489
+  66%   5499
+  75%   5499
+  80%  14937
+  90%  14937
+  95%  14937
+  98%  14937
+  99%  14937
+ 100%  14937 (longest request)
+***********************

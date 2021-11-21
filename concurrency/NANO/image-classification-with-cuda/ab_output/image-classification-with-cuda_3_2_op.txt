@@ -1,0 +1,43 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/image-classification-with-cuda
+Document Length:        Variable
+
+Concurrency Level:      3
+Time taken for tests:   329.691 seconds
+Complete requests:      10
+Failed requests:        0
+Non-2xx responses:      10
+Total transferred:      840 bytes
+HTML transferred:       0 bytes
+Requests per second:    0.03 [#/sec] (mean)
+Time per request:       98907.311 [ms] (mean)
+Time per request:       32969.104 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.00 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    6   5.6      4      14
+Processing: 80208 81303 2326.3  80598   87904
+Waiting:    80208 81302 2325.8  80596   87902
+Total:      80209 81309 2325.1  80611   87906
+
+Percentage of the requests served within a certain time (ms)
+  50%  80611
+  66%  80708
+  75%  80718
+  80%  80870
+  90%  87906
+  95%  87906
+  98%  87906
+  99%  87906
+ 100%  87906 (longest request)

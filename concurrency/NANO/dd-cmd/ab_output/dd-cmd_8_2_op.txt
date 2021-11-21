@@ -1,0 +1,43 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/dd-cmd
+Document Length:        Variable
+
+Concurrency Level:      8
+Time taken for tests:   404.508 seconds
+Complete requests:      10
+Failed requests:        0
+Non-2xx responses:      8
+Total transferred:      1659 bytes
+HTML transferred:       689 bytes
+Requests per second:    0.02 [#/sec] (mean)
+Time per request:       323606.190 [ms] (mean)
+Time per request:       40450.774 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.00 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    3   0.5      3       3
+Processing: 48958 250505 104516.6 300068  300097
+Waiting:    48958 250504 104516.4 300068  300097
+Total:      48961 250508 104516.5 300070  300100
+
+Percentage of the requests served within a certain time (ms)
+  50%  300070
+  66%  300076
+  75%  300091
+  80%  300100
+  90%  300100
+  95%  300100
+  98%  300100
+  99%  300100
+ 100%  300100 (longest request)

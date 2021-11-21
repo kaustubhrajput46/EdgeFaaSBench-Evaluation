@@ -1,0 +1,104 @@
+Tue Aug  3 23:24:30 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient)...INFO: GET header == 
+---
+GET /function/matrix-multiplication-medium HTTP/1.0
+Host: 192.168.1.20:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 100
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 04 Aug 2021 03:24:45 GMT
+X-Duration-Seconds: 5.547439
+
+Time taken to multiply matrices of 150 by 150 size:4.02 seconds.
+Function executed in 4.26 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 100
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 04 Aug 2021 03:24:50 GMT
+X-Duration-Seconds: 5.559100
+
+Time taken to multiply matrices of 150 by 150 size:4.07 seconds.
+Function executed in 4.29 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 100
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 04 Aug 2021 03:24:56 GMT
+X-Duration-Seconds: 5.507361
+
+Time taken to multiply matrices of 150 by 150 size:4.05 seconds.
+Function executed in 4.21 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 100
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 04 Aug 2021 03:25:01 GMT
+X-Duration-Seconds: 5.633687
+
+Time taken to multiply matrices of 150 by 150 size:4.07 seconds.
+Function executed in 4.34 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 100
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 04 Aug 2021 03:25:07 GMT
+X-Duration-Seconds: 5.470505
+
+Time taken to multiply matrices of 150 by 150 size:4.04 seconds.
+Function executed in 4.21 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/matrix-multiplication-medium
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   33.876 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      1240 bytes
+HTML transferred:       500 bytes
+Requests per second:    0.15 [#/sec] (mean)
+Time per request:       6775.251 [ms] (mean)
+Time per request:       6775.251 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.04 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    2   0.5      2       3
+Processing:  5497 6773 2688.2   5625   11580
+Waiting:     5497 6773 2688.2   5625   11580
+Total:       5499 6775 2687.9   5628   11582
+
+Percentage of the requests served within a certain time (ms)
+  50%   5590
+  66%   5665
+  75%   5665
+  80%  11582
+  90%  11582
+  95%  11582
+  98%  11582
+  99%  11582
+ 100%  11582 (longest request)
+***********************

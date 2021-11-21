@@ -1,0 +1,178 @@
+1. CPU GPU app.
+
+steps
+1. Decide handler.py content
+	- Done
+1.5 See if you can make container based on current image you have.
+	- Done
+2. See what kind of output you want to print. Like what kind of readings do you want.
+	- Done. Taking Infer and load time
+2. Make images based on that.
+	- Done.
+	- Image names 
+		kaustubhrajput/image-classification-batch-alexnet-cpu
+		kaustubhrajput/image-classification-batch-alexnet-gpu
+		kaustubhrajput/image-classification-batch-squeezenet-cpu
+		kaustubhrajput/image-classification-batch-squeezenet-gpu
+3. Invoke and make sure it is running.
+	- Done
+	- Readings taken for 10 executions
+3.5 Send kulkarni code and ask him to make image based on that.
+	- Attached code here.	
+4. Send mail to professor and ask if we should ignnore first warm up runs.
+	- TODO
+4. Make changes in script to just run this app 10 times.
+	- Done for one app.
+5. Get logs and get average readings, plot graphs and make observations.
+	- TODO
+
+
+*** Handler.py code
+* kaustubhrajput/image-classification-batch-alexnet-gpu
+
+import torch
+import torchvision
+import urllib
+from PIL import Image
+from torchvision import transforms
+import time as t
+import random
+import os
+
+def handle(req):
+    print("Executing image-classification-alexnet-cpu....")
+    startTime = t.time()
+    model = torch.hub.load('pytorch/vision:v0.6.0', 'alexnet', pretrained = True)
+    # This will set the model in eval mode
+    model.eval().cuda()
+    print(t.time()-startTime,",","Time for setting model in evaluation mode")
+#    newDir = os.getcwd() + '/data/Imgs/'
+    newDir = os.getcwd() + '/data/jpgs2/'
+
+    myList = os.listdir(newDir)
+#    print(myList)
+#    print("Until first iteration = ", startTime - t.time())
+    inferTime = t.time()
+
+    for fileName in myList:
+        iterationStartTime = t.time()
+#        print(fileName)
+        filePath = newDir + str(fileName)
+
+        input_image = Image.open(filePath)
+        one = t.time() # remove
+        preprocess = transforms.Compose([
+        transforms.Resize(256),
+        transforms.CenterCrop(224),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),])
+        two = t.time() # remove
+
+        input_tensor = preprocess(input_image)
+        three = t.time() # remove
+        input_batch = input_tensor.unsqueeze(0) # Create mini batch as expected by model
+        four = t.time() # remove
+
+        input_batch = input_batch.to('cuda')
+        model.to('cuda')
+        five = t.time() # remove
+
+        # carryinig out the inference
+        out = model(input_batch)
+#        print("output shape:", out.shape)
+        six = t.time() # remove
+        with open('imagenet_classes.txt') as f:
+            classes = [line.strip() for line in f.readlines()]
+
+        _, index = torch.max(out, 1)
+        seven = t.time() # remove
+        percentage = torch.nn.functional.softmax(out, dim=1)[0]*100
+        eight = t.time() # remove
+#        print(classes[index[0]], percentage[index[0]].item())
+#    endTime=t.time()
+#        print(two-one,",","preprocess", ",", three-two, ",", "Input tensor", ",", four-three,",","input batch",",", five-four,",","model to cuda",",", six-five,",","out"",", seven-six,",","img classes",",", eight-seven,",","percentage")
+        _, indices = torch.sort(out, descending=True)
+        [(classes[idx], percentage[idx].item()) for idx in indices[0][:5]]
+#        print(t.time() - iterationStartTime,",", fileName,",", classes[index[0]],",", percentage[index[0]].item())
+
+    endTime=t.time()
+    print(inferTime-startTime, ",", "Load time", ",",endTime-inferTime, ",", "Infer time", ",", endTime-startTime,",", "Total time")
+#    print("Total time = ", endTime-startTime)
+#    print("alexnet gpu")
+    return "Function executed in {:.2f} seconds.".format(endTime-startTime)
+
+
+if __name__=='__main__':
+    handle('')
+
+
+
+* kaustubhrajput/image-classification-batch-alexnet-cpu
+
+
+import torch
+import torchvision
+import urllib
+from PIL import Image
+from torchvision import transforms
+import time as t
+import random
+import os
+
+def handle(req):
+    print("Executing image-classification-alexnet-cpu....")
+    startTime = t.time()
+    model = torch.hub.load('pytorch/vision:v0.6.0', 'alexnet', pretrained = True)
+
+    #Test model.eval.cuda() as well
+    model.eval()
+    print(t.time()-startTime,",","Time for setting model in evaluation mode")
+
+#    newDir = os.getcwd() + '/data/Imgs/'
+    newDir = os.getcwd() + '/data/jpgs2/'
+
+    myList = os.listdir(newDir)
+
+    inferTime = t.time()
+
+    for fileName in myList:
+#        print(fileName)
+#    fileName = random.choices(myList)[0]
+#        print(fileName) #remove
+        filePath = newDir + str(fileName)
+
+        input_image = Image.open(filePath)
+        preprocess = transforms.Compose([
+        transforms.Resize(256),
+        transforms.CenterCrop(224),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),])
+        input_tensor = preprocess(input_image)
+        input_batch = input_tensor.unsqueeze(0) # Create mini batch as expected by model
+
+    # put the model in the eval mode
+#        model.eval()
+    # carryinig out the inference
+        out = model(input_batch)
+#        print("output shape:", out.shape)
+
+        with open('imagenet_classes.txt') as f:
+            classes = [line.strip() for line in f.readlines()]
+
+        _, index = torch.max(out, 1)
+        percentage = torch.nn.functional.softmax(out, dim=1)[0]*100
+#        print(classes[index[0]], percentage[index[0]].item())
+#    endTime=t.time()
+
+        _, indices = torch.sort(out, descending=True)
+        [(classes[idx], percentage[idx].item()) for idx in indices[0][:5]]
+    endTime=t.time()
+    print(inferTime-startTime, ",", "Load time", ",",endTime-inferTime, ",", "Infer time", ",", endTime-startTime,",", "Total time")
+#    print(endTime-startTime)
+    return "Function executed in {:.2f} seconds.".format(endTime-startTime)
+
+
+if __name__=='__main__':
+    handle('')
+
+

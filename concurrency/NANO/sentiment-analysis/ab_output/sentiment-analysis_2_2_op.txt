@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/sentiment-analysis
+Document Length:        Variable
+
+Concurrency Level:      2
+Time taken for tests:   66.979 seconds
+Complete requests:      20
+Failed requests:        0
+Total transferred:      7800 bytes
+HTML transferred:       4840 bytes
+Requests per second:    0.30 [#/sec] (mean)
+Time per request:       6697.934 [ms] (mean)
+Time per request:       3348.967 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.11 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    5   4.4      3      22
+Processing:  5969 6094  64.2   6095    6276
+Waiting:     5969 6094  64.2   6094    6276
+Total:       5991 6099  62.1   6098    6278
+
+Percentage of the requests served within a certain time (ms)
+  50%   6098
+  66%   6113
+  75%   6125
+  80%   6129
+  90%   6177
+  95%   6278
+  98%   6278
+  99%   6278
+ 100%   6278 (longest request)

@@ -1,0 +1,119 @@
+Tue Jun 15 17:04:47 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient)...INFO: GET header == 
+---
+GET /function/speech-to-text HTTP/1.0
+Host: 192.168.1.20:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 144
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 15 Jun 2021 21:04:55 GMT
+X-Duration-Seconds: 6.680239
+
+Converting audio transcripts into text ...
+
+This is the output: bicycle
+Data has been written to the file...
+Function executed in 6.44 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 144
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 15 Jun 2021 21:05:00 GMT
+X-Duration-Seconds: 4.397959
+
+Converting audio transcripts into text ...
+
+This is the output: bicycle
+Data has been written to the file...
+Function executed in 4.16 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 144
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 15 Jun 2021 21:05:04 GMT
+X-Duration-Seconds: 4.832215
+
+Converting audio transcripts into text ...
+
+This is the output: bicycle
+Data has been written to the file...
+Function executed in 4.57 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 144
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 15 Jun 2021 21:05:09 GMT
+X-Duration-Seconds: 4.431377
+
+Converting audio transcripts into text ...
+
+This is the output: bicycle
+Data has been written to the file...
+Function executed in 4.11 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 144
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 15 Jun 2021 21:05:16 GMT
+X-Duration-Seconds: 6.798379
+
+Converting audio transcripts into text ...
+
+This is the output: bicycle
+Data has been written to the file...
+Function executed in 6.48 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/speech-to-text
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   27.522 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      1460 bytes
+HTML transferred:       720 bytes
+Requests per second:    0.18 [#/sec] (mean)
+Time per request:       5504.498 [ms] (mean)
+Time per request:       5504.498 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.05 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    4   2.1      4       7
+Processing:  4456 5501 1246.9   5833    6883
+Waiting:     4456 5501 1246.8   5833    6883
+Total:       4458 5504 1247.7   5839    6886
+
+Percentage of the requests served within a certain time (ms)
+  50%   4840
+  66%   6837
+  75%   6837
+  80%   6886
+  90%   6886
+  95%   6886
+  98%   6886
+  99%   6886
+ 100%   6886 (longest request)
+***********************

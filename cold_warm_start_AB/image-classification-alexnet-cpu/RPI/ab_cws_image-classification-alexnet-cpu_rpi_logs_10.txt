@@ -1,0 +1,111 @@
+Thu Jul 29 12:15:49 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.11 (be patient)...INFO: GET header == 
+---
+GET /function/image-classification-alexnet-cpu HTTP/1.0
+Host: 192.168.1.11:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:16:19 GMT
+X-Duration-Seconds: 23.269643
+
+Downloading: "https://github.com/pytorch/vision/archive/v0.6.0.zip" to /home/app/.cache/torch/hub/v0.6.0.zip
+Downloading: "https://download.pytorch.org/models/alexnet-owt-4df8aa71.pth" to /home/app/.cache/torch/hub/checkpoints/alexnet-owt-4df8aa71.pth
+0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 219
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:16:26 GMT
+X-Duration-Seconds: 6.724491
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+159: 'Rhodesian ridgeback', 56.65770721435547
+The function has executed successfully in 5.00 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 207
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:16:33 GMT
+X-Duration-Seconds: 7.066871
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+90: 'lorikeet', 27.37378692626953
+The function has executed successfully in 5.35 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 219
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:16:40 GMT
+X-Duration-Seconds: 6.942503
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+547: 'electric locomotive', 69.97917175292969
+The function has executed successfully in 5.21 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 206
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:16:47 GMT
+X-Duration-Seconds: 7.593117
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+618: 'ladle', 35.163856506347656
+The function has executed successfully in 5.85 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.11
+Server Port:            8080
+
+Document Path:          /function/image-classification-alexnet-cpu
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   58.509 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      178041 bytes
+HTML transferred:       177321 bytes
+Requests per second:    0.09 [#/sec] (mean)
+Time per request:       11701.876 [ms] (mean)
+Time per request:       11701.876 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.97 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    9  14.3      4      35
+Processing:  6759 11693 10241.5   7358   30004
+Waiting:     6759 11672 10196.8   7358   29904
+Total:       6761 11702 10255.7   7361   30039
+
+Percentage of the requests served within a certain time (ms)
+  50%   7096
+  66%   7627
+  75%   7627
+  80%  30039
+  90%  30039
+  95%  30039
+  98%  30039
+  99%  30039
+ 100%  30039 (longest request)
+***********************

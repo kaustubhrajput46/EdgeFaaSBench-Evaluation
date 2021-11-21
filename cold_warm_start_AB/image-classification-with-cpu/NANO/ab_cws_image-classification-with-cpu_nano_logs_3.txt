@@ -1,0 +1,115 @@
+Wed Aug  4 09:38:05 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient)...INFO: GET header == 
+---
+GET /function/image-classification-with-cpu HTTP/1.0
+Host: 192.168.1.20:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 04 Aug 2021 13:38:16 GMT
+X-Duration-Seconds: 5.015384
+
+Downloading: "https://github.com/pytorch/vision/archive/v0.6.0.zip" to /root/.cache/torch/hub/v0.6.0.zip
+Downloading: "https://download.pytorch.org/models/squeezenet1_0-a815701f.pth" to /root/.cache/torch/hub/checkpoints/squeezenet1_0-a815701f.pth
+0.2%0.3%0.5%0.7%0.8%1.0%1.1%1.3%1.5%1.6%1.8%2.0%2.1%2.3%2.4%2.6%2.8%2.9%3.1%3.3%3.4%3.6%3.8%3.9%4.1%4.2%4.4%4.6%4.7%4.9%5.1%5.2%5.4%5.6%5.7%5.9%6.0%6.2%6.4%6.5%6.7%6.9%7.0%7.2%7.3%7.5%7.7%7.8%8.0%8.2%8.3%8.5%8.7%8.8%9.0%9.1%9.3%9.5%9.6%9.8%10.0%10.1%10.3%10.4%10.6%10.8%10.9%11.1%11.3%11.4%11.6%11.8%11.9%12.1%12.2%12.4%12.6%12.7%12.9%13.1%13.2%13.4%13.6%13.7%13.9%14.0%14.2%14.4%14.5%14.7%14.9%15.0%15.2%15.3%15.5%15.7%15.8%16.0%16.2%16.3%16.5%16.7%16.8%17.0%17.1%17.3%17.5%17.6%17.8%18.0%18.1%18.3%18.4%18.6%18.8%18.9%19.1%19.3%19.4%19.6%19.8%19.9%20.1%20.2%20.4%20.6%20.7%20.9%21.1%21.2%21.4%21.6%21.7%21.9%22.0%22.2%22.4%22.5%22.7%22.9%23.0%23.2%23.3%23.5%23.7%23.8%24.0%24.2%24.3%24.5%24.7%24.8%25.0%25.1%25.3%25.5%25.6%25.8%26.0%26.1%26.3%26.4%26.6%26.8%26.9%27.1%27.3%27.4%27.6%27.8%27.9%28.1%28.2%28.4%28.6%28.7%28.9%29.1%29.2%29.4%29.6%29.7%29.9%30.0%30.2%30.4%30.5%30.7%30.9%31.0%31.2%31.3%31.5%31.7%31.8%32.0%32.2%32.3%32.5%32.7%32.8%33.0%33.1%33.3%33.5%33.6%33.8%34.0%34.1%34.3%34.4%34.6%34.8%34.9%35.1%35.3%35.4%35.6%35.8%35.9%36.1%36.2%36.4%36.6%36.7%36.9%37.1%37.2%37.4%37.6%37.7%37.9%38.0%38.2%38.4%38.5%38.7%38.9%39.0%39.2%39.3%39.5%39.7%39.8%40.0%40.2%40.3%40.5%40.7%40.8%41.0%41.1%41.3%41.5%41.6%41.8%42.0%42.1%42.3%42.4%42.6%42.8%42.9%43.1%43.3%43.4%43.6%43.8%43.9%44.1%44.2%44.4%44.6%44.7%44.9%45.1%45.2%45.4%45.6%45.7%45.9%46.0%46.2%46.4%46.5%46.7%46.9%47.0%47.2%47.3%47.5%47.7%47.8%48.0%48.2%48.3%48.5%48.7%48.8%49.0%49.1%49.3%49.5%49.6%49.8%50.0%50.1%50.3%50.4%50.6%50.8%50.9%51.1%51.3%51.4%51.6%51.8%51.9%52.1%52.2%52.4%52.6%52.7%52.9%53.1%53.2%53.4%53.6%53.7%53.9%54.0%54.2%54.4%54.5%54.7%54.9%55.0%55.2%55.3%55.5%55.7%55.8%56.0%56.2%56.3%56.5%56.7%56.8%57.0%57.1%57.3%57.5%57.6%57.8%58.0%58.1%58.3%58.4%58.6%58.8%58.9%59.1%59.3%59.4%59.6%59.8%59.9%60.1%60.2%60.4%60.6%60.7%60.9%61.1%61.2%61.4%61.6%61.7%61.9%62.0%62.2%62.4%62.5%62.7%62.9%63.0%63.2%63.3%63.5%63.7%63.8%64.0%64.2%64.3%64.5%64.7%64.8%65.0%65.1%65.3%65.5%65.6%65.8%66.0%66.1%66.3%66.4%66.6%66.8%66.9%67.1%67.3%67.4%67.6%67.8%67.9%68.1%68.2%68.4%68.6%68.7%68.9%69.1%69.2%69.4%69.6%69.7%69.9%70.0%70.2%70.4%70.5%70.7%70.9%71.0%71.2%71.3%71.5%71.7%71.8%72.0%72.2%72.3%72.5%72.7%72.8%73.0%73.1%73.3%73.5%73.6%73.8%74.0%74.1%74.3%74.4%74.6%74.8%74.9%75.1%75.3%75.4%75.6%75.8%75.9%76.1%76.2%76.4%76.6%76.7%76.9%77.1%77.2%77.4%77.6%77.7%77.9%78.0%78.2%78.4%78.5%78.7%78.9%79.0%79.2%79.3%79.5%79.7%79.8%80.0%80.2%80.3%80.5%80.7%80.8%81.0%81.1%81.3%81.5%81.6%81.8%82.0%82.1%82.3%82.4%82.6%82.8%82.9%83.1%83.3%83.4%83.6%83.8%83.9%84.1%84.2%84.4%84.6%84.7%84.9%85.1%85.2%85.4%85.6%85.7%85.9%86.0%86.2%86.4%86.5%86.7%86.9%87.0%87.2%87.3%87.5%87.7%87.8%88.0%88.2%88.3%88.5%88.7%88.8%89.0%89.1%89.3%89.5%89.6%89.8%90.0%90.1%90.3%90.4%90.6%90.8%90.9%91.1%91.3%91.4%91.6%91.8%91.9%92.1%92.2%92.4%92.6%92.7%92.9%93.1%93.2%93.4%93.6%93.7%93.9%94.0%94.2%94.4%94.5%94.7%94.9%95.0%95.2%95.3%95.5%95.7%95.8%96.0%96.2%96.3%96.5%96.7%96.8%97.0%97.1%97.3%97.5%97.6%97.8%98.0%98.1%98.3%98.4%98.6%98.8%98.9%99.1%99.3%99.4%99.6%99.8%99.9%100.0%
+output shape: torch.Size([1, 1000])
+472: 'canoe', 99.0367202758789
+Function executed in 2.71 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 190
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 04 Aug 2021 13:38:18 GMT
+X-Duration-Seconds: 2.679483
+
+Using cache found in /root/.cache/torch/hub/pytorch_vision_v0.6.0
+output shape: torch.Size([1, 1000])
+598: 'home theater, home theatre', 66.05699157714844
+Function executed in 0.51 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 171
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 04 Aug 2021 13:38:21 GMT
+X-Duration-Seconds: 2.719619
+
+Using cache found in /root/.cache/torch/hub/pytorch_vision_v0.6.0
+output shape: torch.Size([1, 1000])
+562: 'fountain', 15.6673002243042
+Function executed in 0.52 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 181
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 04 Aug 2021 13:38:24 GMT
+X-Duration-Seconds: 2.757167
+
+Using cache found in /root/.cache/torch/hub/pytorch_vision_v0.6.0
+output shape: torch.Size([1, 1000])
+171: 'Italian greyhound', 43.04903793334961
+Function executed in 0.55 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 171
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 04 Aug 2021 13:38:27 GMT
+X-Duration-Seconds: 2.840245
+
+Using cache found in /root/.cache/torch/hub/pytorch_vision_v0.6.0
+output shape: torch.Size([1, 1000])
+676: 'muzzle', 12.970905303955078
+Function executed in 0.68 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/image-classification-with-cpu
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   22.130 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      5402 bytes
+HTML transferred:       4683 bytes
+Requests per second:    0.23 [#/sec] (mean)
+Time per request:       4426.014 [ms] (mean)
+Time per request:       4426.014 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.24 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    2   0.8      2       3
+Processing:  2707 4424 3710.1   2814   11060
+Waiting:     2707 4423 3709.7   2814   11059
+Total:       2709 4426 3709.7   2817   11061
+
+Percentage of the requests served within a certain time (ms)
+  50%   2788
+  66%   2845
+  75%   2845
+  80%  11061
+  90%  11061
+  95%  11061
+  98%  11061
+  99%  11061
+ 100%  11061 (longest request)
+***********************

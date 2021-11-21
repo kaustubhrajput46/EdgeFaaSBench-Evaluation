@@ -1,0 +1,104 @@
+Fri Jul 30 09:43:49 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.11 (be patient)...INFO: GET header == 
+---
+GET /function/matrix-multiplication-medium HTTP/1.0
+Host: 192.168.1.11:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 114
+Content-Type: text/plain; charset=utf-8
+Date: Fri, 30 Jul 2021 13:44:03 GMT
+X-Duration-Seconds: 5.365231
+
+The function has executed successfully in 3.95 seconds.
+Time taken to execute the entire function is:4.11 seconds
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 114
+Content-Type: text/plain; charset=utf-8
+Date: Fri, 30 Jul 2021 13:44:09 GMT
+X-Duration-Seconds: 5.374890
+
+The function has executed successfully in 3.96 seconds.
+Time taken to execute the entire function is:4.13 seconds
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 114
+Content-Type: text/plain; charset=utf-8
+Date: Fri, 30 Jul 2021 13:44:14 GMT
+X-Duration-Seconds: 5.575630
+
+The function has executed successfully in 4.20 seconds.
+Time taken to execute the entire function is:4.36 seconds
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 114
+Content-Type: text/plain; charset=utf-8
+Date: Fri, 30 Jul 2021 13:44:20 GMT
+X-Duration-Seconds: 5.407810
+
+The function has executed successfully in 4.03 seconds.
+Time taken to execute the entire function is:4.18 seconds
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 114
+Content-Type: text/plain; charset=utf-8
+Date: Fri, 30 Jul 2021 13:44:25 GMT
+X-Duration-Seconds: 5.365696
+
+The function has executed successfully in 3.97 seconds.
+Time taken to execute the entire function is:4.12 seconds
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.11
+Server Port:            8080
+
+Document Path:          /function/matrix-multiplication-medium
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   33.699 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      1310 bytes
+HTML transferred:       570 bytes
+Requests per second:    0.15 [#/sec] (mean)
+Time per request:       6739.833 [ms] (mean)
+Time per request:       6739.833 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.04 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    2   0.3      2       2
+Processing:  5398 6738 2860.7   5517   11853
+Waiting:     5398 6738 2860.7   5517   11853
+Total:       5400 6740 2860.6   5519   11855
+
+Percentage of the requests served within a certain time (ms)
+  50%   5434
+  66%   5604
+  75%   5604
+  80%  11855
+  90%  11855
+  95%  11855
+  98%  11855
+  99%  11855
+ 100%  11855 (longest request)
+***********************

@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/image-processing-pillow
+Document Length:        Variable
+
+Concurrency Level:      14
+Time taken for tests:   110.059 seconds
+Complete requests:      20
+Failed requests:        0
+Total transferred:      3680 bytes
+HTML transferred:       720 bytes
+Requests per second:    0.18 [#/sec] (mean)
+Time per request:       77041.040 [ms] (mean)
+Time per request:       5502.931 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.03 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    9   4.8      9      15
+Processing: 18387 54338 20489.9  66730   68520
+Waiting:    18387 54337 20489.8  66730   68520
+Total:      18390 54346 20494.0  66739   68530
+
+Percentage of the requests served within a certain time (ms)
+  50%  66739
+  66%  67892
+  75%  68261
+  80%  68279
+  90%  68338
+  95%  68530
+  98%  68530
+  99%  68530
+ 100%  68530 (longest request)

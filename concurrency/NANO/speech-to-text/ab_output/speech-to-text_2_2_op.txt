@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/speech-to-text
+Document Length:        Variable
+
+Concurrency Level:      2
+Time taken for tests:   66.538 seconds
+Complete requests:      20
+Failed requests:        0
+Total transferred:      5840 bytes
+HTML transferred:       2880 bytes
+Requests per second:    0.30 [#/sec] (mean)
+Time per request:       6653.834 [ms] (mean)
+Time per request:       3326.917 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.09 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    3   1.8      3       8
+Processing:  5116 6113 350.0   6221    6541
+Waiting:     5115 6113 350.0   6221    6541
+Total:       5117 6117 350.4   6224    6548
+
+Percentage of the requests served within a certain time (ms)
+  50%   6224
+  66%   6317
+  75%   6372
+  80%   6409
+  90%   6501
+  95%   6548
+  98%   6548
+  99%   6548
+ 100%   6548 (longest request)

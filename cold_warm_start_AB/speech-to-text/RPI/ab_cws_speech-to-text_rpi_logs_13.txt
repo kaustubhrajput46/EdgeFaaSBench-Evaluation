@@ -1,0 +1,119 @@
+Thu Jul 29 10:57:53 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.11 (be patient)...INFO: GET header == 
+---
+GET /function/speech-to-text HTTP/1.0
+Host: 192.168.1.11:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 165
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 14:58:07 GMT
+X-Duration-Seconds: 6.379630
+
+Converting audio transcripts into text ...
+
+This is the output: bicycle
+Data has been written to the file...
+The function has executed successfully in 6.11 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 165
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 14:58:11 GMT
+X-Duration-Seconds: 4.034238
+
+Converting audio transcripts into text ...
+
+This is the output: bicycle
+Data has been written to the file...
+The function has executed successfully in 3.79 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 165
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 14:58:17 GMT
+X-Duration-Seconds: 6.007454
+
+Converting audio transcripts into text ...
+
+This is the output: bicycle
+Data has been written to the file...
+The function has executed successfully in 5.76 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 165
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 14:58:21 GMT
+X-Duration-Seconds: 3.919637
+
+Converting audio transcripts into text ...
+
+This is the output: bicycle
+Data has been written to the file...
+The function has executed successfully in 3.68 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 165
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 14:58:26 GMT
+X-Duration-Seconds: 5.246755
+
+Converting audio transcripts into text ...
+
+This is the output: bicycle
+Data has been written to the file...
+The function has executed successfully in 5.00 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.11
+Server Port:            8080
+
+Document Path:          /function/speech-to-text
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   33.149 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      1565 bytes
+HTML transferred:       825 bytes
+Requests per second:    0.15 [#/sec] (mean)
+Time per request:       6629.785 [ms] (mean)
+Time per request:       6629.785 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.05 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    4   2.6      3       8
+Processing:  3945 6626 4132.6   5631   13858
+Waiting:     3945 6626 4132.7   5631   13858
+Total:       3947 6630 4132.1   5637   13860
+
+Percentage of the requests served within a certain time (ms)
+  50%   5259
+  66%   6014
+  75%   6014
+  80%  13860
+  90%  13860
+  95%  13860
+  98%  13860
+  99%  13860
+ 100%  13860 (longest request)
+***********************

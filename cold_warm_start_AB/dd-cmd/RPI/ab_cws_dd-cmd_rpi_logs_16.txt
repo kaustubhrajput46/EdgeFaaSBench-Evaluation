@@ -1,0 +1,139 @@
+Wed 30 Jun 2021 08:23:43 PM EDT
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.51 (be patient)...INFO: GET header == 
+---
+GET /function/dd-cmd HTTP/1.0
+Host: 192.168.1.51:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 364
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 01 Jul 2021 00:24:16 GMT
+X-Duration-Seconds: 25.889138
+
+Executing this command:dd if=/dev/zero of=output.txt bs=1024k count=500 oflag=dsync 2>write.txt
+Time Taken to write the output: 25.3912 s
+Throughput: 20.6 MB/s
+
+Executing this command:dd if=output.txt of=/dev/null bs=1024k count=10 2>read.txt
+Time Taken to read the output: 0.012272 s
+Throughput: 854 MB/s
+
+The function has executed successfully in 25.43 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 365
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 01 Jul 2021 00:24:42 GMT
+X-Duration-Seconds: 25.970515
+
+Executing this command:dd if=/dev/zero of=output.txt bs=1024k count=500 oflag=dsync 2>write.txt
+Time Taken to write the output: 25.2489 s
+Throughput: 20.8 MB/s
+
+Executing this command:dd if=output.txt of=/dev/null bs=1024k count=10 2>read.txt
+Time Taken to read the output: 0.0116803 s
+Throughput: 898 MB/s
+
+The function has executed successfully in 25.49 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 364
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 01 Jul 2021 00:25:08 GMT
+X-Duration-Seconds: 25.856107
+
+Executing this command:dd if=/dev/zero of=output.txt bs=1024k count=500 oflag=dsync 2>write.txt
+Time Taken to write the output: 25.163 s
+Throughput: 20.8 MB/s
+
+Executing this command:dd if=output.txt of=/dev/null bs=1024k count=10 2>read.txt
+Time Taken to read the output: 0.0145512 s
+Throughput: 721 MB/s
+
+The function has executed successfully in 25.42 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 364
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 01 Jul 2021 00:25:34 GMT
+X-Duration-Seconds: 25.777611
+
+Executing this command:dd if=/dev/zero of=output.txt bs=1024k count=500 oflag=dsync 2>write.txt
+Time Taken to write the output: 25.136 s
+Throughput: 20.9 MB/s
+
+Executing this command:dd if=output.txt of=/dev/null bs=1024k count=10 2>read.txt
+Time Taken to read the output: 0.0133931 s
+Throughput: 783 MB/s
+
+The function has executed successfully in 25.38 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 365
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 01 Jul 2021 00:26:00 GMT
+X-Duration-Seconds: 25.789380
+
+Executing this command:dd if=/dev/zero of=output.txt bs=1024k count=500 oflag=dsync 2>write.txt
+Time Taken to write the output: 25.1084 s
+Throughput: 20.9 MB/s
+
+Executing this command:dd if=output.txt of=/dev/null bs=1024k count=10 2>read.txt
+Time Taken to read the output: 0.0221823 s
+Throughput: 473 MB/s
+
+The function has executed successfully in 25.36 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.51
+Server Port:            8080
+
+Document Path:          /function/dd-cmd
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   136.966 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      2567 bytes
+HTML transferred:       1822 bytes
+Requests per second:    0.04 [#/sec] (mean)
+Time per request:       27393.139 [ms] (mean)
+Time per request:       27393.139 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    2   0.6      2       3
+Processing: 25802 27391 3320.7  26008   33327
+Waiting:    25801 27391 3320.7  26008   33327
+Total:      25804 27393 3321.2  26010   33330
+
+Percentage of the requests served within a certain time (ms)
+  50%  25908
+  66%  26112
+  75%  26112
+  80%  33330
+  90%  33330
+  95%  33330
+  98%  33330
+  99%  33330
+ 100%  33330 (longest request)
+***********************

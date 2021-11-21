@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.34 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.34
+Server Port:            8080
+
+Document Path:          /function/fast-fourier-transform
+Document Length:        Variable
+
+Concurrency Level:      2
+Time taken for tests:   50.081 seconds
+Complete requests:      20
+Failed requests:        0
+Total transferred:      4060 bytes
+HTML transferred:       1120 bytes
+Requests per second:    0.40 [#/sec] (mean)
+Time per request:       5008.141 [ms] (mean)
+Time per request:       2504.071 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.08 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2   60 229.4      4    1033
+Processing:  4193 4512 227.5   4449    5067
+Waiting:     4193 4511 227.8   4449    5067
+Total:       4197 4572 307.4   4480    5440
+
+Percentage of the requests served within a certain time (ms)
+  50%   4480
+  66%   4539
+  75%   4757
+  80%   4828
+  90%   5115
+  95%   5440
+  98%   5440
+  99%   5440
+ 100%   5440 (longest request)

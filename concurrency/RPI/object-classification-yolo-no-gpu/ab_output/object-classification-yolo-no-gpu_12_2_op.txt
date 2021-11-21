@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.34 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.34
+Server Port:            8080
+
+Document Path:          /function/object-classification-yolo-no-gpu
+Document Length:        Variable
+
+Concurrency Level:      12
+Time taken for tests:   85.180 seconds
+Complete requests:      20
+Failed requests:        0
+Total transferred:      40662 bytes
+HTML transferred:       37663 bytes
+Requests per second:    0.23 [#/sec] (mean)
+Time per request:       51108.088 [ms] (mean)
+Time per request:       4259.007 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.47 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    5   1.7      5       7
+Processing:  5174 40751 13205.2  50026   51027
+Waiting:     5174 40751 13204.9  50024   51027
+Total:       5176 40756 13206.7  50033   51033
+
+Percentage of the requests served within a certain time (ms)
+  50%  50033
+  66%  50479
+  75%  50779
+  80%  50786
+  90%  50844
+  95%  51033
+  98%  51033
+  99%  51033
+ 100%  51033 (longest request)

@@ -1,0 +1,111 @@
+Thu Jul 29 12:26:56 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.11 (be patient)...INFO: GET header == 
+---
+GET /function/image-classification-alexnet-cpu HTTP/1.0
+Host: 192.168.1.11:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:27:26 GMT
+X-Duration-Seconds: 24.068442
+
+Downloading: "https://github.com/pytorch/vision/archive/v0.6.0.zip" to /home/app/.cache/torch/hub/v0.6.0.zip
+Downloading: "https://download.pytorch.org/models/alexnet-owt-4df8aa71.pth" to /home/app/.cache/torch/hub/checkpoints/alexnet-owt-4df8aa71.pth
+0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 230
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:27:33 GMT
+X-Duration-Seconds: 7.017718
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+166: 'Walker hound, Walker foxhound', 15.923107147216797
+The function has executed successfully in 5.25 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 212
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:27:41 GMT
+X-Duration-Seconds: 7.085051
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+285: 'Egyptian cat', 54.88309860229492
+The function has executed successfully in 5.36 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 246
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:27:47 GMT
+X-Duration-Seconds: 6.319148
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+762: 'restaurant, eating house, eating place, eatery', 71.41654205322266
+The function has executed successfully in 4.59 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 227
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:27:53 GMT
+X-Duration-Seconds: 6.353037
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+864: 'tow truck, tow car, wrecker', 15.64207935333252
+The function has executed successfully in 4.62 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.11
+Server Port:            8080
+
+Document Path:          /function/image-classification-alexnet-cpu
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   57.646 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      178097 bytes
+HTML transferred:       177377 bytes
+Requests per second:    0.09 [#/sec] (mean)
+Time per request:       11529.102 [ms] (mean)
+Time per request:       11529.102 [ms] (mean, across all concurrent requests)
+Transfer rate:          3.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    3   1.1      3       5
+Processing:  6359 11526 10737.1   7083   30723
+Waiting:     6350 11510 10706.4   7082   30651
+Total:       6361 11529 10738.0   7086   30727
+
+Percentage of the requests served within a certain time (ms)
+  50%   7051
+  66%   7121
+  75%   7121
+  80%  30727
+  90%  30727
+  95%  30727
+  98%  30727
+  99%  30727
+ 100%  30727 (longest request)
+***********************

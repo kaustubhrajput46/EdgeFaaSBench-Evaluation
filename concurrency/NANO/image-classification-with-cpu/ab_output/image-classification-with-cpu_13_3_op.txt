@@ -1,0 +1,44 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/image-classification-with-cpu
+Document Length:        Variable
+
+Concurrency Level:      13
+Time taken for tests:   31.963 seconds
+Complete requests:      20
+Failed requests:        0
+Total transferred:      6623 bytes
+HTML transferred:       3648 bytes
+Requests per second:    0.63 [#/sec] (mean)
+Time per request:       20776.257 [ms] (mean)
+Time per request:       1598.174 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.20 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    2   0.5      3       3
+Processing:  2883 15330 5214.3  18756   19256
+Waiting:     2883 15330 5214.3  18756   19256
+Total:       2886 15332 5214.6  18758   19258
+ERROR: The median and mean for the initial connection time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%  18758
+  66%  18954
+  75%  19100
+  80%  19143
+  90%  19216
+  95%  19258
+  98%  19258
+  99%  19258
+ 100%  19258 (longest request)

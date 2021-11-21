@@ -1,0 +1,200 @@
+Tue May 25 14:28:43 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient)...INFO: GET header == 
+---
+GET /function/image-processing-pillow HTTP/1.0
+Host: 192.168.1.20:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 36
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 25 May 2021 18:29:39 GMT
+X-Duration-Seconds: 18.693507
+
+Function executed in 17.87 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 36
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 25 May 2021 18:29:58 GMT
+X-Duration-Seconds: 18.775866
+
+Function executed in 17.97 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 36
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 25 May 2021 18:30:17 GMT
+X-Duration-Seconds: 18.961575
+
+Function executed in 18.14 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 36
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 25 May 2021 18:30:35 GMT
+X-Duration-Seconds: 18.614075
+
+Function executed in 17.82 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 36
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 25 May 2021 18:30:54 GMT
+X-Duration-Seconds: 18.646801
+
+Function executed in 17.87 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/image-processing-pillow
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   130.042 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      920 bytes
+HTML transferred:       180 bytes
+Requests per second:    0.04 [#/sec] (mean)
+Time per request:       26008.453 [ms] (mean)
+Time per request:       26008.453 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.01 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    2   0.5      3       3
+Processing: 18634 26006 16176.7  18893   54943
+Waiting:    18634 26006 16176.7  18893   54943
+Total:      18636 26008 16176.3  18896   54944
+WARNING: The median and mean for the initial connection time are not within a normal deviation
+        These results are probably not that reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%  18798
+  66%  18993
+  75%  18993
+  80%  54944
+  90%  54944
+  95%  54944
+  98%  54944
+  99%  54944
+ 100%  54944 (longest request)
+***********************
+Tue Jun  8 12:08:14 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient)...INFO: GET header == 
+---
+GET /function/image-processing-pillow HTTP/1.0
+Host: 192.168.1.20:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 36
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 08 Jun 2021 16:08:38 GMT
+X-Duration-Seconds: 19.276471
+
+Function executed in 18.43 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 36
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 08 Jun 2021 16:08:58 GMT
+X-Duration-Seconds: 19.405658
+
+Function executed in 18.57 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 36
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 08 Jun 2021 16:09:17 GMT
+X-Duration-Seconds: 18.828332
+
+Function executed in 17.99 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 36
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 08 Jun 2021 16:09:39 GMT
+X-Duration-Seconds: 18.933442
+
+Function executed in 18.07 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 36
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 08 Jun 2021 16:09:58 GMT
+X-Duration-Seconds: 18.742506
+
+Function executed in 17.89 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/image-processing-pillow
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   105.598 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      920 bytes
+HTML transferred:       180 bytes
+Requests per second:    0.05 [#/sec] (mean)
+Time per request:       21119.646 [ms] (mean)
+Time per request:       21119.646 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.01 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1  293 646.8      5    1450
+Processing: 18773 20827 2953.9  20273   25847
+Waiting:    18773 20827 2953.9  20273   25847
+Total:      18775 21120 2791.7  20769   25848
+
+Percentage of the requests served within a certain time (ms)
+  50%  20419
+  66%  21118
+  75%  21118
+  80%  25848
+  90%  25848
+  95%  25848
+  98%  25848
+  99%  25848
+ 100%  25848 (longest request)
+***********************

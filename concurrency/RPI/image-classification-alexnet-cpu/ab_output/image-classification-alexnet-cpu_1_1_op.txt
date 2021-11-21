@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.34 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.34
+Server Port:            8080
+
+Document Path:          /function/image-classification-alexnet-cpu
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   63.907 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      3632 bytes
+HTML transferred:       2152 bytes
+Requests per second:    0.16 [#/sec] (mean)
+Time per request:       6390.683 [ms] (mean)
+Time per request:       6390.683 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.06 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    2   1.4      2       6
+Processing:  6307 6388 106.0   6362    6666
+Waiting:     6307 6388 106.0   6362    6666
+Total:       6309 6391 105.6   6364    6668
+
+Percentage of the requests served within a certain time (ms)
+  50%   6364
+  66%   6389
+  75%   6402
+  80%   6440
+  90%   6668
+  95%   6668
+  98%   6668
+  99%   6668
+ 100%   6668 (longest request)

@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.34 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.34
+Server Port:            8080
+
+Document Path:          /function/sorter
+Document Length:        Variable
+
+Concurrency Level:      17
+Time taken for tests:   20.562 seconds
+Complete requests:      20
+Failed requests:        0
+Total transferred:      4094 bytes
+HTML transferred:       1137 bytes
+Requests per second:    0.97 [#/sec] (mean)
+Time per request:       17477.491 [ms] (mean)
+Time per request:       1028.088 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.19 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    6   2.4      8       8
+Processing:  2462 13698 4672.6  15577   16159
+Waiting:     2461 13697 4672.7  15577   16158
+Total:       2463 13704 4674.4  15585   16166
+
+Percentage of the requests served within a certain time (ms)
+  50%  15585
+  66%  15804
+  75%  15841
+  80%  15852
+  90%  15902
+  95%  16166
+  98%  16166
+  99%  16166
+ 100%  16166 (longest request)

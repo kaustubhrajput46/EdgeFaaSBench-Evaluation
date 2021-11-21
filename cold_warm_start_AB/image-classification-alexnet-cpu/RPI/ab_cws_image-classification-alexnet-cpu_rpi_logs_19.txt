@@ -1,0 +1,111 @@
+Thu Jul 29 12:32:37 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.11 (be patient)...INFO: GET header == 
+---
+GET /function/image-classification-alexnet-cpu HTTP/1.0
+Host: 192.168.1.11:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:33:10 GMT
+X-Duration-Seconds: 26.517735
+
+Downloading: "https://github.com/pytorch/vision/archive/v0.6.0.zip" to /home/app/.cache/torch/hub/v0.6.0.zip
+Downloading: "https://download.pytorch.org/models/alexnet-owt-4df8aa71.pth" to /home/app/.cache/torch/hub/checkpoints/alexnet-owt-4df8aa71.pth
+0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.0%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.1%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.2%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.3%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.4%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.5%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.6%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.7%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.8%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%0.9%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.0%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.1%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.2%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.3%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.4%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.5%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.6%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.7%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.8%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%1.9%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.0%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.1%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.2%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.3%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.4%2.5%2.5%2.5%2.5%2.5%2.5%2.5%2.5%2.5%2.5%2.5%2.5%2.5%
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 246
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:33:17 GMT
+X-Duration-Seconds: 6.386832
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+762: 'restaurant, eating house, eating place, eatery', 71.41654205322266
+The function has executed successfully in 4.61 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 216
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:33:23 GMT
+X-Duration-Seconds: 6.343092
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+267: 'standard poodle', 11.397957801818848
+The function has executed successfully in 4.58 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 208
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:33:29 GMT
+X-Duration-Seconds: 6.311331
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+404: 'airliner', 94.14906311035156
+The function has executed successfully in 4.56 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 220
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 16:33:36 GMT
+X-Duration-Seconds: 6.364695
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+Executing image-classification-alexnet-cpu....
+975: 'lakeside, lakeshore', 32.739891052246094
+The function has executed successfully in 4.60 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.11
+Server Port:            8080
+
+Document Path:          /function/image-classification-alexnet-cpu
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   58.729 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      178086 bytes
+HTML transferred:       177366 bytes
+Requests per second:    0.09 [#/sec] (mean)
+Time per request:       11745.743 [ms] (mean)
+Time per request:       11745.743 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.96 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    4   2.2      5       7
+Processing:  6351 11742 11969.6   6412   33154
+Waiting:     6351 11726 11934.6   6412   33075
+Total:       6356 11746 11968.2   6417   33155
+
+Percentage of the requests served within a certain time (ms)
+  50%   6412
+  66%   6422
+  75%   6422
+  80%  33155
+  90%  33155
+  95%  33155
+  98%  33155
+  99%  33155
+ 100%  33155 (longest request)
+***********************

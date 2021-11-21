@@ -1,0 +1,99 @@
+Thu 01 Jul 2021 04:49:23 AM EDT
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.51 (be patient)...INFO: GET header == 
+---
+GET /function/image-processing-pillow HTTP/1.0
+Host: 192.168.1.51:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 57
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 01 Jul 2021 08:49:49 GMT
+X-Duration-Seconds: 18.939434
+
+The function has executed successfully in 18.18 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 57
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 01 Jul 2021 08:50:08 GMT
+X-Duration-Seconds: 18.717550
+
+The function has executed successfully in 18.05 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 57
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 01 Jul 2021 08:50:27 GMT
+X-Duration-Seconds: 18.678780
+
+The function has executed successfully in 18.02 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 57
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 01 Jul 2021 08:50:46 GMT
+X-Duration-Seconds: 19.122140
+
+The function has executed successfully in 18.40 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 57
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 01 Jul 2021 08:51:05 GMT
+X-Duration-Seconds: 18.833601
+
+The function has executed successfully in 18.14 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.51
+Server Port:            8080
+
+Document Path:          /function/image-processing-pillow
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   102.070 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      1025 bytes
+HTML transferred:       285 bytes
+Requests per second:    0.05 [#/sec] (mean)
+Time per request:       20414.045 [ms] (mean)
+Time per request:       20414.045 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.01 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    2   0.7      2       3
+Processing: 18709 20412 3387.1  19019   26463
+Waiting:    18709 20412 3387.0  19019   26463
+Total:      18712 20414 3387.6  19021   26466
+
+Percentage of the requests served within a certain time (ms)
+  50%  18862
+  66%  19179
+  75%  19179
+  80%  26466
+  90%  26466
+  95%  26466
+  98%  26466
+  99%  26466
+ 100%  26466 (longest request)
+***********************

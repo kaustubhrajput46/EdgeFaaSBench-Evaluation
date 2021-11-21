@@ -1,0 +1,20 @@
+Logs we are going to use :
+image-classification-alexnet-cpu -- done
+image-classification-with-cpu – done
+sentiment-analysis -- done
+matrix-multiplication-high -- done
+iperf3 -- done
+image-classification-with-cuda
+object-classification-yolo-no-gpu -- done
+image-processing-pillow -- done
+floating-point-operation-cosine -- done
+fast-fourier-transform – done
+matrix-multiplication-medium – done
+dd-cmd – done 
+object-classification-yolo-gpu
+floating-point-operation-sine -- done
+speech-to-text -- done
+sorter -- done
+image-classification-alexnet-gpu – done
+matrix-multiplication-low --  done
+floating-point-operation-sqrt -- done

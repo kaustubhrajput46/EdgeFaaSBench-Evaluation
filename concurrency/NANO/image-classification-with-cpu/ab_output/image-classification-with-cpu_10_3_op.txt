@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.20 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        192.168.1.20
+Server Port:            8080
+
+Document Path:          /function/image-classification-with-cpu
+Document Length:        Variable
+
+Concurrency Level:      10
+Time taken for tests:   32.097 seconds
+Complete requests:      20
+Failed requests:        0
+Total transferred:      6655 bytes
+HTML transferred:       3676 bytes
+Requests per second:    0.62 [#/sec] (mean)
+Time per request:       16048.544 [ms] (mean)
+Time per request:       1604.854 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.20 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1   16  12.9     17      54
+Processing:  2947 13846 2678.9  14808   15496
+Waiting:     2946 13846 2678.9  14808   15496
+Total:       2949 13862 2682.1  14825   15513
+
+Percentage of the requests served within a certain time (ms)
+  50%  14825
+  66%  14911
+  75%  15094
+  80%  15281
+  90%  15479
+  95%  15513
+  98%  15513
+  99%  15513
+ 100%  15513 (longest request)

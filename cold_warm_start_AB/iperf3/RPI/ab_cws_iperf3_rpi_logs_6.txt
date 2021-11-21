@@ -1,0 +1,244 @@
+Thu Jul 29 08:31:28 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.11 (be patient)...INFO: GET header == 
+---
+GET /function/iperf3 HTTP/1.0
+Host: 192.168.1.11:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 1246
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 12:31:45 GMT
+X-Duration-Seconds: 10.430391
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Server started in the background. Awaiting for packeges...
+
+Packeges from the client has been sent to the server.
+
+Here are the statistics of sender:
+1. Data Transferred: 7.23 GBytes
+2. Bitrate: 6.21 Gbits/sec
+---------------------------------------------------------------------------------------------------------------------------
+
+Here are the statistics of receiver:
+1. Data Received: 7.23 GBytes
+2. Bitrate: 6.21 Gbits/sec
+---------------------------------------------------------------------------------------------------------------------------
+
+Obtaining information to kill the server running in the background...
+
+Information collection for 'iperf3 -s -D' complete. PId for this process is 27
+
+Proess "iperf3 -s -D" has been successfully terminated.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+The function has executed successfully in 10.02 seconds.
+
+Entire function iperf3 executed in 10.05 seconds.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 1246
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 12:31:55 GMT
+X-Duration-Seconds: 10.411706
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Server started in the background. Awaiting for packeges...
+
+Packeges from the client has been sent to the server.
+
+Here are the statistics of sender:
+1. Data Transferred: 7.17 GBytes
+2. Bitrate: 6.15 Gbits/sec
+---------------------------------------------------------------------------------------------------------------------------
+
+Here are the statistics of receiver:
+1. Data Received: 7.16 GBytes
+2. Bitrate: 6.15 Gbits/sec
+---------------------------------------------------------------------------------------------------------------------------
+
+Obtaining information to kill the server running in the background...
+
+Information collection for 'iperf3 -s -D' complete. PId for this process is 59
+
+Proess "iperf3 -s -D" has been successfully terminated.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+The function has executed successfully in 10.02 seconds.
+
+Entire function iperf3 executed in 10.04 seconds.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 1246
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 12:32:06 GMT
+X-Duration-Seconds: 10.419141
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Server started in the background. Awaiting for packeges...
+
+Packeges from the client has been sent to the server.
+
+Here are the statistics of sender:
+1. Data Transferred: 7.30 GBytes
+2. Bitrate: 6.27 Gbits/sec
+---------------------------------------------------------------------------------------------------------------------------
+
+Here are the statistics of receiver:
+1. Data Received: 7.29 GBytes
+2. Bitrate: 6.26 Gbits/sec
+---------------------------------------------------------------------------------------------------------------------------
+
+Obtaining information to kill the server running in the background...
+
+Information collection for 'iperf3 -s -D' complete. PId for this process is 89
+
+Proess "iperf3 -s -D" has been successfully terminated.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+The function has executed successfully in 10.03 seconds.
+
+Entire function iperf3 executed in 10.05 seconds.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 1247
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 12:32:16 GMT
+X-Duration-Seconds: 10.413213
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Server started in the background. Awaiting for packeges...
+
+Packeges from the client has been sent to the server.
+
+Here are the statistics of sender:
+1. Data Transferred: 7.31 GBytes
+2. Bitrate: 6.28 Gbits/sec
+---------------------------------------------------------------------------------------------------------------------------
+
+Here are the statistics of receiver:
+1. Data Received: 7.30 GBytes
+2. Bitrate: 6.27 Gbits/sec
+---------------------------------------------------------------------------------------------------------------------------
+
+Obtaining information to kill the server running in the background...
+
+Information collection for 'iperf3 -s -D' complete. PId for this process is 120
+
+Proess "iperf3 -s -D" has been successfully terminated.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+The function has executed successfully in 10.02 seconds.
+
+Entire function iperf3 executed in 10.04 seconds.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 1247
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 12:32:27 GMT
+X-Duration-Seconds: 10.443523
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Server started in the background. Awaiting for packeges...
+
+Packeges from the client has been sent to the server.
+
+Here are the statistics of sender:
+1. Data Transferred: 7.26 GBytes
+2. Bitrate: 6.23 Gbits/sec
+---------------------------------------------------------------------------------------------------------------------------
+
+Here are the statistics of receiver:
+1. Data Received: 7.25 GBytes
+2. Bitrate: 6.23 Gbits/sec
+---------------------------------------------------------------------------------------------------------------------------
+
+Obtaining information to kill the server running in the background...
+
+Information collection for 'iperf3 -s -D' complete. PId for this process is 161
+
+Proess "iperf3 -s -D" has been successfully terminated.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+The function has executed successfully in 10.02 seconds.
+
+Entire function iperf3 executed in 10.04 seconds.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.11
+Server Port:            8080
+
+Document Path:          /function/iperf3
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   58.641 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      6982 bytes
+HTML transferred:       6232 bytes
+Requests per second:    0.09 [#/sec] (mean)
+Time per request:       11728.225 [ms] (mean)
+Time per request:       11728.225 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.12 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    3   0.9      3       4
+Processing: 10437 11726 2851.5  10461   16826
+Waiting:    10436 11725 2851.6  10460   16826
+Total:      10439 11728 2851.4  10464   16829
+
+Percentage of the requests served within a certain time (ms)
+  50%  10451
+  66%  10477
+  75%  10477
+  80%  16829
+  90%  16829
+  95%  16829
+  98%  16829
+  99%  16829
+ 100%  16829 (longest request)
+***********************

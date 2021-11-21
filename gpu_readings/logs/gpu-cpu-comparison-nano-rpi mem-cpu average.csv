@@ -1,0 +1,3 @@
+Appnames,,nano-alexnet-cpu,nano-alexnet-gpu,rpi-alexnet-cpu,,nano-squeezenet-cpu,nano-squeezenet-gpu,rpi-squeezenet-cpu
+Avg MEM,,344.553,1170.7422,,,593.47,1279,
+Avg CPU,,259.399,51.1778,,,247.237,66.9853,

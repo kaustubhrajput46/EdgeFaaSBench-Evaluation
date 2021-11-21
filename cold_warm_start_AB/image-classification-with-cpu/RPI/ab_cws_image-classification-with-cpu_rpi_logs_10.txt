@@ -1,0 +1,115 @@
+Thu Jul 29 16:32:17 EDT 2021
+***********************
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.1.11 (be patient)...INFO: GET header == 
+---
+GET /function/image-classification-with-cpu HTTP/1.0
+Host: 192.168.1.11:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 20:32:27 GMT
+X-Duration-Seconds: 4.395404
+
+Downloading: "https://github.com/pytorch/vision/archive/v0.6.0.zip" to /home/app/.cache/torch/hub/v0.6.0.zip
+Downloading: "https://download.pytorch.org/models/squeezenet1_1-f364aa15.pth" to /home/app/.cache/torch/hub/checkpoints/squeezenet1_1-f364aa15.pth
+0.2%0.3%0.5%0.7%0.8%1.0%1.2%1.3%1.5%1.6%1.8%2.0%2.1%2.3%2.5%2.6%2.8%3.0%3.1%3.3%3.5%3.6%3.8%4.0%4.1%4.3%4.5%4.6%4.8%4.9%5.1%5.3%5.4%5.6%5.8%5.9%6.1%6.3%6.4%6.6%6.8%6.9%7.1%7.3%7.4%7.6%7.8%7.9%8.1%8.2%8.4%8.6%8.7%8.9%9.1%9.2%9.4%9.6%9.7%9.9%10.1%10.2%10.4%10.6%10.7%10.9%11.1%11.2%11.4%11.5%11.7%11.9%12.0%12.2%12.4%12.5%12.7%12.9%13.0%13.2%13.4%13.5%13.7%13.9%14.0%14.2%14.4%14.5%14.7%14.8%15.0%15.2%15.3%15.5%15.7%15.8%16.0%16.2%16.3%16.5%16.7%16.8%17.0%17.2%17.3%17.5%17.6%17.8%18.0%18.1%18.3%18.5%18.6%18.8%19.0%19.1%19.3%19.5%19.6%19.8%20.0%20.1%20.3%20.5%20.6%20.8%20.9%21.1%21.3%21.4%21.6%21.8%21.9%22.1%22.3%22.4%22.6%22.8%22.9%23.1%23.3%23.4%23.6%23.8%23.9%24.1%24.2%24.4%24.6%24.7%24.9%25.1%25.2%25.4%25.6%25.7%25.9%26.1%26.2%26.4%26.6%26.7%26.9%27.1%27.2%27.4%27.5%27.7%27.9%28.0%28.2%28.4%28.5%28.7%28.9%29.0%29.2%29.4%29.5%29.7%29.9%30.0%30.2%30.4%30.5%30.7%30.8%31.0%31.2%31.3%31.5%31.7%31.8%32.0%32.2%32.3%32.5%32.7%32.8%33.0%33.2%33.3%33.5%33.6%33.8%34.0%34.1%34.3%34.5%34.6%34.8%35.0%35.1%35.3%35.5%35.6%35.8%36.0%36.1%36.3%36.5%36.6%36.8%36.9%37.1%37.3%37.4%37.6%37.8%37.9%38.1%38.3%38.4%38.6%38.8%38.9%39.1%39.3%39.4%39.6%39.8%39.9%40.1%40.2%40.4%40.6%40.7%40.9%41.1%41.2%41.4%41.6%41.7%41.9%42.1%42.2%42.4%42.6%42.7%42.9%43.1%43.2%43.4%43.5%43.7%43.9%44.0%44.2%44.4%44.5%44.7%44.9%45.0%45.2%45.4%45.5%45.7%45.9%46.0%46.2%46.4%46.5%46.7%46.8%47.0%47.2%47.3%47.5%47.7%47.8%48.0%48.2%48.3%48.5%48.7%48.8%49.0%49.2%49.3%49.5%49.6%49.8%50.0%50.1%50.3%50.5%50.6%50.8%51.0%51.1%51.3%51.5%51.6%51.8%52.0%52.1%52.3%52.5%52.6%52.8%52.9%53.1%53.3%53.4%53.6%53.8%53.9%54.1%54.3%54.4%54.6%54.8%54.9%55.1%55.3%55.4%55.6%55.8%55.9%56.1%56.2%56.4%56.6%56.7%56.9%57.1%57.2%57.4%57.6%57.7%57.9%58.1%58.2%58.4%58.6%58.7%58.9%59.1%59.2%59.4%59.5%59.7%59.9%60.0%60.2%60.4%60.5%60.7%60.9%61.0%61.2%61.4%61.5%61.7%61.9%62.0%62.2%62.4%62.5%62.7%62.8%63.0%63.2%63.3%63.5%63.7%63.8%64.0%64.2%64.3%64.5%64.7%64.8%65.0%65.2%65.3%65.5%65.6%65.8%66.0%66.1%66.3%66.5%66.6%66.8%67.0%67.1%67.3%67.5%67.6%67.8%68.0%68.1%68.3%68.5%68.6%68.8%68.9%69.1%69.3%69.4%69.6%69.8%69.9%70.1%70.3%70.4%70.6%70.8%70.9%71.1%71.3%71.4%71.6%71.8%71.9%72.1%72.2%72.4%72.6%72.7%72.9%73.1%73.2%73.4%73.6%73.7%73.9%74.1%74.2%74.4%74.6%74.7%74.9%75.1%75.2%75.4%75.5%75.7%75.9%76.0%76.2%76.4%76.5%76.7%76.9%77.0%77.2%77.4%77.5%77.7%77.9%78.0%78.2%78.4%78.5%78.7%78.8%79.0%79.2%79.3%79.5%79.7%79.8%80.0%80.2%80.3%80.5%80.7%80.8%81.0%81.2%81.3%81.5%81.6%81.8%82.0%82.1%82.3%82.5%82.6%82.8%83.0%83.1%83.3%83.5%83.6%83.8%84.0%84.1%84.3%84.5%84.6%84.8%84.9%85.1%85.3%85.4%85.6%85.8%85.9%86.1%86.3%86.4%86.6%86.8%86.9%87.1%87.3%87.4%87.6%87.8%87.9%88.1%88.2%88.4%88.6%88.7%88.9%89.1%89.2%89.4%89.6%89.7%89.9%90.1%90.2%90.4%90.6%90.7%90.9%91.1%91.2%91.4%91.5%91.7%91.9%92.0%92.2%92.4%92.5%92.7%92.9%93.0%93.2%93.4%93.5%93.7%93.9%94.0%94.2%94.4%94.5%94.7%94.8%95.0%95.2%95.3%95.5%95.7%95.8%96.0%96.2%96.3%96.5%96.7%96.8%97.0%97.2%97.3%97.5%97.6%97.8%98.0%98.1%98.3%98.5%98.6%98.8%99.0%99.1%99.3%99.5%99.6%99.8%100.0%100.0%
+output shape: torch.Size([1, 1000])
+905: 'window shade', 51.91724395751953
+The function has executed successfully in 2.66 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 200
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 20:32:30 GMT
+X-Duration-Seconds: 2.600528
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+output shape: torch.Size([1, 1000])
+585: 'hair spray', 22.998849868774414
+The function has executed successfully in 0.89 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 200
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 20:32:33 GMT
+X-Duration-Seconds: 2.581883
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+output shape: torch.Size([1, 1000])
+246: 'Great Dane', 19.057430267333984
+The function has executed successfully in 0.88 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 215
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 20:32:35 GMT
+X-Duration-Seconds: 2.555247
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+output shape: torch.Size([1, 1000])
+598: 'home theater, home theatre', 21.35083770751953
+The function has executed successfully in 0.86 seconds.
+
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 218
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Jul 2021 20:32:38 GMT
+X-Duration-Seconds: 2.612372
+
+Using cache found in /home/app/.cache/torch/hub/pytorch_vision_v0.6.0
+output shape: torch.Size([1, 1000])
+143: 'oystercatcher, oyster catcher', 30.52299690246582
+The function has executed successfully in 0.86 seconds.
+
+..done
+
+
+Server Software:        
+Server Hostname:        192.168.1.11
+Server Port:            8080
+
+Document Path:          /function/image-classification-with-cpu
+Document Length:        Variable
+
+Concurrency Level:      1
+Time taken for tests:   21.300 seconds
+Complete requests:      5
+Failed requests:        0
+Total transferred:      5524 bytes
+HTML transferred:       4805 bytes
+Requests per second:    0.23 [#/sec] (mean)
+Time per request:       4260.042 [ms] (mean)
+Time per request:       4260.042 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.25 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    4   2.8      4       8
+Processing:  2561 4256 3691.0   2627   10858
+Waiting:     2561 4256 3690.6   2627   10857
+Total:       2563 4260 3689.9   2634   10860
+
+Percentage of the requests served within a certain time (ms)
+  50%   2622
+  66%   2647
+  75%   2647
+  80%  10860
+  90%  10860
+  95%  10860
+  98%  10860
+  99%  10860
+ 100%  10860 (longest request)
+***********************
